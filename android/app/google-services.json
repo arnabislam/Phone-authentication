@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1076268358331",
+    "project_id": "football-frick-5f37b",
+    "storage_bucket": "football-frick-5f37b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076268358331:android:2095ae8bc496a66a0b679e",
+        "android_client_info": {
+          "package_name": "com.example.footballfrick"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4mrXn4Ojj--p9kOPtWZoKv6lsB-0f1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
