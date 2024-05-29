@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:footballfrick/login.dart';
 import 'package:footballfrick/phone_authentication.dart';
+import 'package:footballfrick/signup.dart';
 
 
 void main() async{
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
 
-      home: PhoneAuthentication()
+      home: Signup()
     );
   }
 }
@@ -103,9 +105,19 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            Column(
+              children: [
+                Text(
+                  '$_counter',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+
+                TextButton(onPressed: (){
+
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Login()));
+                }, child: Text("Login"))
+              ],
             ),
           ],
         ),
