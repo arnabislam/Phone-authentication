@@ -1,8 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:footballfrick/adddata.dart';
 import 'package:footballfrick/login.dart';
 import 'package:footballfrick/phone_authentication.dart';
+import 'package:footballfrick/signin.dart';
 import 'package:footballfrick/signup.dart';
+import 'package:footballfrick/uiData/showdata.dart';
 
 
 void main() async{
@@ -13,7 +16,8 @@ void main() async{
         appId: '1:1076268358331:android:2095ae8bc496a66a0b679e',
         messagingSenderId: '1076268358331 ',
         projectId: 'football-frick-5f37b',
-        //storageBucket: 'myapp-b9yt18.appspot.com',
+
+        storageBucket: 'football-frick-5f37b.appspot.com',
       )
   );
   runApp(const MyApp());

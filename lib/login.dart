@@ -143,30 +143,11 @@ class _LoginState extends State<Login> {
                 }, child: Text("Forgot password")),
 
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    GestureDetector(
-                      onTap: (){
-                        AuthMethods().signInWithGoogle(context);
-                      },
-                      child: Icon(Icons.gamepad,color: Colors.green,)
-                    ),
-                    SizedBox(
-                      width: 30.0,
-                    ),
-                    GestureDetector(
-                      onTap: (){
-                        //AuthMethods().signInWithApple();
-                      },
-                      child: Image.asset(
-                        "images/apple1.png",
-                        height: 50,
-                        width: 50,
-                        fit: BoxFit.cover,
-                      ),
-                    )
-                  ],
+                GestureDetector(
+                  onTap: (){
+                    AuthMethods().signInWithGoogle(context);
+                  },
+                  child: Icon(Icons.gamepad,color: Colors.green,)
                 ),
               ],
             ),
